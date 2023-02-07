@@ -18,15 +18,15 @@
                 <input class="display-input" type="text" name="dsp" id="dsp" style="text-align:right;">
             </div>
             <div class="row" style="float: right;">
-                <button class="rowf" id="2nd" value="2nd">DEG</button>
-                <button class="rowsd" id="pi" value="pi">F-E</button>
+                <button class="rowf" id="angle" value="deg">DEG</button>
+                <button class="rowsd" id="fe" value="">F-E</button>
             </div>
             <div class="row">
-                <button class="rowt" id="MC" value="MC">MC</button>
-                <button class="rowt" id="MR" value="MR">MR</button>
-                <button class="rowt" id="M+" value="M+">M+</button>
-                <button class="rowt" id="M-" value="M-">M-</button>
-                <button class="rowt" id="MS" value="MS">MS</button>
+                <button class="rowt mc" id="MC" disabled>MC</button>
+                <button class="rowt mr" id="MR" disabled>MR</button>
+                <button class="rowt" id="M+" >M+</button>
+                <button class="rowt" id="M-" >M-</button>
+                <button class="rowt" id="MS" >MS</button>
             </div>
             <div class="rowd">
                 <div class="dropdown">
@@ -34,9 +34,18 @@
                         &nbsp;<i class="fa-solid fa-angle-down"></i>
                     </button>
                     <div class="dropdown-content">
-                      <a href="#">trigonometry - Dropdown 1 Line</a>
-                      <a href="#">trigonometry - Dropdown 2 Line</a>
-                      <a href="#">trigonometry - Dropdown 3 Line</a>
+                        <div class="frt">
+                            <button id="2nd">2<sup>nd</sup></button>
+                            <button id="sinθ" value="sin">sinθ</button>
+                            <button id="cosθ" value="cos">cosθ</button>
+                            <button id="tanθ" value="tan">tanθ</button>
+                        </div>
+                        <div class="frt">
+                            <button id="hyp">hyp</button>
+                            <button id="cosecθ" value="cosecθ">cosecθ</button>
+                            <button id="secθ" value="secθ">secθ</button>
+                            <button id="cotθ" value="cotθ">cotθ</button>
+                        </div>
                     </div>
                 </div>
                 <div class="dropdownn">
@@ -44,9 +53,16 @@
                         &nbsp;<i class="fa-solid fa-angle-down"></i>
                     </button>
                     <div class="dropdown-contentn">
-                      <a href="#">Function - Dropdown 1 Line</a>
-                      <a href="#">Function - Dropdown 2 Line</a>
-                      <a href="#">Function - Dropdown 3 Line</a>
+                        <div class="frt">
+                            <button id="|x|">⎢x ⎢</button>
+                            <button id="floor">⎣x⎦</button>
+                            <button id="frr">⎡x⎤</button>
+                        </div>
+                        <div class="frt">
+                            <button id="rand">rand</button>
+                            <button id="dms">→dms</button>
+                            <button id="">→deg</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,15 +76,15 @@
             <div class="row">
                 <button class="rows" id="x2" value="x2">x<sup>2</sup></button>
                 <button class="rows" id="1/x" value="1/">1/x</button>
-                <button class="rows" id="|x|" value="|x|">|x|</button>
+                <button class="rows" id="|x|">|x|</button>
                 <button class="rows" id="exp" value="E">exp</button>
-                <button class="rows" id="mod" value="mod">mod</button>
+                <button class="rows" id="mod" value="%">mod</button>
             </div>
             <div class="row">
                 <button class="rows" id="sqrt" value="sqrt"> <i class="fa-solid fa-square-root-variable"></i> </button>
                 <button class="rows" id="(" value="(">(</button>
                 <button class="rows" id=")" value=")">)</button>
-                <button class="rows" id="n!" value="n!">n!</button>
+                <button class="rows" id="ni">n!</button>
                 <button class="rows" id="/" value="/">÷</button>
             </div>
             <div class="row">
@@ -86,15 +102,15 @@
                 <button class="rows" id="-" value="-">-</button>
             </div>
             <div class="row">
-                <button class="rows" id="log" value="log">log</button>
+                <button class="rows" id="log" value="">log</button>
                 <button class="rown" id="1" value="1">1</button>
                 <button class="rown" id="2" value="2">2</button>
                 <button class="rown" id="3" value="3">3</button>
                 <button class="rows" id="+" value="+">+</button>
             </div>
             <div class="row">
-                <button class="rows" id="in" value="/2.71">in</button>
-                <button class="rown" id="+/-" value="+/-">+/-</button>
+                <button class="rows" id="in" value="">in</button>
+                <button class="rown" id="mp" value="">+/-</button>
                 <button class="rown" id="0" value="0">0</button>
                 <button class="rown" id="." value=".">.</button>
                 <button class="rowse" id="=" value="=">=</button>
