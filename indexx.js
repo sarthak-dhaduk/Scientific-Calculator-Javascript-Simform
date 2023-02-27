@@ -90,6 +90,8 @@ let icon = document.querySelectorAll('i');
                     fact = fact * i;
                 }
                 document.querySelector("input").value = fact;
+                fact=1;
+                i=1;
             }else if (e.target.id == "dms") {
                 let d = Math.floor(entry);
                 let minfloat = (entry - d) * 60;
