@@ -25,8 +25,14 @@ let icon = document.querySelectorAll('i');
         button.addEventListener('click', (e) => {
             console.log(e.target.value);
             if (e.target.value == "=") {
-                entry = eval(entry);
-                document.querySelector("input").value = entry;
+                var subentry = entry;
+                if(entry == "e"){
+                    document.querySelector("input").value = entry;
+                }else{
+                    entry = eval(entry);
+                    document.querySelector("input").value = entry;
+                }
+                
             }else if (e.target.id == "M+") {
                 st_memory=eval(st_memory+"+"+entry);
                 document.querySelector("input").value = st_memory;
