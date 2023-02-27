@@ -85,6 +85,11 @@ let icon = document.querySelectorAll('i');
             }else if (e.target.id == "rand") {
                 entry = Math.floor(Math.random() * entry);
                 document.querySelector("input").value = entry;
+            }else if (e.target.id == "10x" && entry != "") {
+                entry = "10**" + entry;
+                entry = eval(entry);
+                document.querySelector("input").value = entry;
+                entry = "";
             }else if (e.target.id == "ni") {
                 for(let i = 1 ; i<=entry;i++){
                     fact = fact * i;
