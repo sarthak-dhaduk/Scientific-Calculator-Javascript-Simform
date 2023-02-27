@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="icon" type="image" href="/img/hii.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="indexz.css">
+</head>
+<body>
+    
+        <section class="container">
+            <div class="display">
+                <input class="display-input" type="text" name="dsp" id="dsp" style="text-align:right;">
+            </div>
+            <div class="" style="float: right;">
+                <button class="rowf jscont" id="angle" value="deg">DEG</button>
+                <button class="rowsd jscont" id="fe" value="">F-E</button>
+            </div>
+            <div class="row">
+                <button class="rowt mc jscont" id="MC" disabled>MC</button>
+                <button class="rowt mr jscont" id="MR" disabled>MR</button>
+                <button class="rowt jscont" id="M+" >M+</button>
+                <button class="rowt jscont" id="M-" >M-</button>
+                <button class="rowt jscont" id="MS" >MS</button>
+            </div>
+            <div class="rowd">
+                <div class="dropdown">
+                    <button class="dropbtn"> <img src="img/trigonometry.png" alt="trigonometry" height="15" width="15"> &nbsp; trigonometry
+                        &nbsp;<i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="frt">
+                            <button class="jscont" id="2nd">2nd</button>
+                            <button class="jscont" id="sinθ" value="sin">sinθ</button>
+                            <button class="jscont" id="cosθ" value="cos">cosθ</button>
+                            <button class="jscont" id="tanθ" value="tan">tanθ</button>
+                        </div>
+                        <div class="frt">
+                            <button class="jscont" id="hyp">hyp</button>
+                            <button class="jscont" id="cosecθ" value="cosecθ">cosecθ</button>
+                            <button class="jscont" id="secθ" value="secθ">secθ</button>
+                            <button class="jscont" id="cotθ" value="cotθ">cotθ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdownn">
+                    <button class="dropbtnn"><img src="img/f.png" alt="Function" height="15" width="15"> &nbsp; Function
+                        &nbsp;<i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-contentn">
+                        <div class="frtt">
+                            <button class="jscont" id="|x|">⎢x ⎢</button>
+                            <button class="jscont" id="floor">⎣x⎦</button>
+                            <button class="jscont" id="frr">⎡x⎤</button>
+                        </div>
+                        <div class="frtt">
+                            <button class="jscont" id="rand">rand</button>
+                            <button class="jscont" id="dms">→dms</button>
+                            <button class="jscont" id="">→deg</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button class="rows jscont" id="2nd" value="2nd">2nd</button>
+                <button class="rows jscont" id="pi" value="3.14">π</button>
+                <button class="rows jscont" id="e" value="e"><small>e</small></button>
+                <button class="rows jscont" id="C" value="C">C</button>
+                <button class="rows jscont" id="delete" value="D">  <i class="fa-sharp fa-solid fa-delete-left"></i> </button>
+            </div>
+            <div class="row">
+                <button class="rows jscont" id="x2" value="x2">x<sup>2</sup></button>
+                <button class="rows jscont" id="1/x" value="1/">1/x</button>
+                <button class="rows jscont" id="|x|">|x|</button>
+                <button class="rows jscont" id="exp" value="E">exp</button>
+                <button class="rows jscont" id="mod" value="%">mod</button>
+            </div>
+            <div class="row">
+                <button class="rows jscont" id="sqrti" value="sqrti">√</button>
+                <button class="rows jscont" id="(" value="(">(</button>
+                <button class="rows jscont" id=")" value=")">)</button>
+                <button class="rows jscont" id="ni">n!</button>
+                <button class="rows jscont" id="/" value="/">÷</button>
+            </div>
+            <div class="row">
+                <button class="rows jscont" id="xy" value="**">x<sup>y</sup></button>
+                <button class="rown jscont" id="7" value="7">7</button>
+                <button class="rown jscont" id="8" value="8">8</button>
+                <button class="rown jscont" id="9" value="9">9</button>
+                <button class="rows jscont" id="*" value="*">x</button>
+            </div>
+            <div class="row">
+                <button class="rows jscont" id="10x" value="">10x</button>
+                <button class="rown jscont" id="4" value="4">4</button>
+                <button class="rown jscont" id="5" value="5">5</button>
+                <button class="rown jscont" id="6" value="6">6</button>
+                <button class="rows jscont" id="-" value="-">-</button>
+            </div>
+            <div class="row">
+                <button class="rows jscont" id="log" value="">log</button>
+                <button class="rown jscont" id="1" value="1">1</button>
+                <button class="rown jscont" id="2" value="2">2</button>
+                <button class="rown jscont" id="3" value="3">3</button>
+                <button class="rows jscont" id="+" value="+">+</button>
+            </div>
+            <div class="row">
+                <button class="rows jscont" id="in" value="">in</button>
+                <button class="rown jscont" id="mp" value="">+/-</button>
+                <button class="rown jscont" id="0" value="0">0</button>
+                <button class="rown jscont" id="." value=".">.</button>
+                <button class="rowse jscont" id="=" value="=">=</button>
+            </div>
+            <div class="space">
+
+            </div>
+        </section>
+</body>
+<script src="indexx.js"></script>
+</html>
