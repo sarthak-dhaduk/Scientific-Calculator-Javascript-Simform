@@ -28,6 +28,8 @@ let icon = document.querySelectorAll('i');
                 var subentry = entry;
                 if(entry == "e"){
                     document.querySelector("input").value = entry;
+                }else if (entry == ""){
+                    entry = "";
                 }else{
                     entry = eval(entry);
                     document.querySelector("input").value = entry;
