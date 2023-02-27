@@ -5,14 +5,14 @@ button:hover {
     background-color: rgba(0, 101, 253, 0.39);
     box-shadow: 0px 8px 16px 0px rgba(73, 152, 255, 0.37);
 }
-.container{
+.container {
     display: flex;
     flex-direction: column;
     margin: auto;
     background-color: rgba(230, 225, 225, 0.466);
     margin-top: 50px;
     height: 100%;
-    width: 514px;
+    width: 380px;
 }
 .display{
     margin-left: 20px;
@@ -28,7 +28,7 @@ button:hover {
 input[type="text" i] {
     outline: none;
     height: 60px;
-    width: 450px;
+    width: 330px;
     padding: 10px;
     margin-top: 10px;
     border: 0px;
@@ -47,7 +47,7 @@ input[type="text" i] {
     margin-top: 2px;
     margin: 1px;
     height: 53px;
-    width: 90px;
+    width: 63px;
     background-color: rgba(230, 225, 225, 0);
 }
 .rowsd{
@@ -61,21 +61,21 @@ input[type="text" i] {
     margin-top: 2px;
     margin: 1px;
     height: 54px;
-    width: 90px;
+    width: 63px;
     background-color: rgba(230, 225, 225, 0.39);
 }
 .rown{
     margin-top: 2px;
     margin: 1px;
     height: 53px;
-    width: 90px;
+    width: 63px;
     background-color: #fff;
 }
 .rowse{
     margin-top: 2px;
     margin: 1px;
     height: 54px;
-    width: 90px;
+    width: 63px;
     background-color: rgba(119, 169, 245, 0.39);
 }
 button {
@@ -131,7 +131,7 @@ button {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
 }
 
 .dropdownn {
@@ -179,12 +179,19 @@ button {
 }
 
 .dropdownn:hover .dropdown-contentn {
-    display: block;
+    display: flex;
 }
 .frt{
-    display: flex;
+    display: block;
+}
+.frtt{
+    display: block;
 }
 .frt button{
     height: 50px;
     width: 112px;
+}
+.frtt button{
+    height: 50px;
+    width: 93px;
 }
