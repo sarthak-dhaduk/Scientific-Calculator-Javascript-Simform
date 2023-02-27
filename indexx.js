@@ -18,7 +18,8 @@ function degrees_to_radians(degrees)
   return degrees * (pi/180);
 }
 
-let buttons = document.querySelectorAll('button');
+let buttons = document.querySelectorAll(".jscont");
+let icon = document.querySelectorAll('i');
 
     Array.from(buttons).forEach((button) => {
         button.addEventListener('click', (e) => {
@@ -49,7 +50,7 @@ let buttons = document.querySelectorAll('button');
             } else if (e.target.value == "x2") {
                 entry = entry+"*"+entry
                 document.querySelector("input").value = entry;
-            }else if (e.target.value == "sqrt") {
+            }else if (e.target.id == "sqrti") {
                 entry = Math.sqrt(entry)
                 document.querySelector("input").value = entry;
             }else if (e.target.id == "mp") {
@@ -495,5 +496,13 @@ let buttons = document.querySelectorAll('button');
                 document.querySelector(".mc").disabled = true;
                 document.querySelector(".mr").disabled = true;
             }
+        })
+    })
+
+
+    Array.from(buttons).forEach((button) => {
+        button.addEventListener('click', (e) => {
+            console.log(e.target.class);
+
         })
     })
